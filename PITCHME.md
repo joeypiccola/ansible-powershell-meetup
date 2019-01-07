@@ -186,7 +186,7 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 ### Ansible & DSC
 
 1. Support found in Ansible's win_dsc module
-2. Module is flagged as community which means that it is maintained by the Ansible Community.
+2. Community module and is not maintained by Ansible Core Team
 3. Not perfect.
 
 ---
@@ -248,3 +248,51 @@ Registry Set_KMS {
 - name: Disable disconnected NICs
   script: scripts/Disable-DisconnectedNics.ps1
 ```
+
+---
+
+### Roles
+
+Playbooks include roles
+Roles include tasks
+
+---
+
+
+### Roles, Playbooks, & Tasks
+
+```plaintext
+joey@ansible:~/playbooks/win_config$ tree
+.
+├── base.yml
+├── group_vars
+│   ├── all
+│   │   └── vars.yml
+│   └── windows
+│       └── vars.yml
+├── inventory
+├── roles
+│   ├── base
+│   │   ├── handlers
+│   │   └── tasks
+│   │       ├── base.yml
+│   │       └── main.yml
+│   └── web
+│       ├── handlers
+│       │   └── main.yml
+│       └── tasks
+│           ├── main.yml
+│           └── web.yml
+├── scripts
+│   ├── Disable-DisconnectedNics.ps1
+│   └── Rename-RemovableStorage.ps1
+└── web.yml
+```
+@[9]
+@[10]
+@[10-14]
+@[15]
+@[15-20]
+@[20-23]
+@[2]
+@[24]
