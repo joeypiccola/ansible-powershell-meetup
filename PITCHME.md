@@ -297,3 +297,23 @@ joey@ansible:~/playbooks/win_config$ tree
 @[25]
 
 ---
+
+## Code & Demo
+
+---
+
+### Questions?
+
+<br>
+
+@fa[twitter](joeypiccola)
+
+@fa[github](joeypiccola)
+
+@fa[wrench](forge.puppet.com/jpi)
+
+@fa[envelope-square](joey@joeypiccola.com)
+
+@fa[bookmark](www.joeypiccola.com)
+
+---
