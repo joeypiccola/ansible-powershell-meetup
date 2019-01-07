@@ -144,7 +144,7 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
     win_psmodule:
       name: xWebAdministration
       state: present
-  - name: Install WebServer feature extas
+  - name: Install WebServer feature extras
     win_feature:
       name:
         - Web-Asp-Net45
@@ -180,4 +180,52 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 @[19-23]
 @[24-29]
 @[30-34]
+
 ---
+
+### Ansible & DSC
+
+1. Support found in Ansible's win_dsc module
+2. Module is flagged as community which means that it is maintained by the Ansible Community.
+3. Not perfect.
+
+---
+
+### win_dsc
+
+```powershell
+Registry Set_KMS {
+  Ensure = "Present"
+  Key = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform"
+  ValueName = "KeyManagementServiceName"
+  ValueData = $kms_host
+  ValueType = "String"
+}
+```
+@[1-6]
+
+```yml
+- name: Set KMS
+  win_dsc:
+    resource_name: Registry
+    key: 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform'
+    ensure: Present
+    valuename: KeyManagementServiceName
+    valuedata: "{{ kms_host }}"
+    valuetype: String
+```
+@[1]
+@[2]
+@[3]
+@[4-8]
+
+---
+
+
+Registry Set_KMS {
+  Ensure = "Present"
+  Key = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform"
+  ValueName = "KeyManagementServiceName"
+  ValueData = $kms_host
+  ValueType = "String"
+}
