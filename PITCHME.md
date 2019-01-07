@@ -94,7 +94,6 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 ### Playbooks cont.
 
 ```yml
----
 - hosts: windows-servers
   vars:
     backup_admin_account: corpadmin
@@ -103,11 +102,13 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
   - my 1st task
   - my 2nd task
 ```
+@[]
 @[1]
-@[2]
-@[3-5]
-@[6-8]
-@[1-8]
+@[2-4]
+@[5]
+@[5-6]
+@[5-7]
+@[1-7]
 
 ---
 
