@@ -253,11 +253,10 @@ Registry Set_KMS {
 
 ### Roles
 
-Playbooks include roles
-Roles include tasks
+1. Playbooks include roles
+2. Roles include tasks
 
 ---
-
 
 ### Roles, Playbooks, & Tasks
 
@@ -296,3 +295,5 @@ joey@ansible:~/playbooks/win_config$ tree
 @[20-23]
 @[2]
 @[24]
+
+---
