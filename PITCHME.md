@@ -94,6 +94,7 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 ### Playbooks cont.
 
 ```yml
+---
 - hosts: windows-servers
   vars:
     backup_admin_account: corpadmin
