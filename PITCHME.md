@@ -208,11 +208,11 @@ Registry Set_KMS {
 - name: Set KMS
   win_dsc:
     resource_name: Registry
-    key: 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform'
-    ensure: Present
-    valuename: KeyManagementServiceName
-    valuedata: "{{ kms_host }}"
-    valuetype: String
+    Key: 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform'
+    Ensure: Present
+    ValueName: KeyManagementServiceName
+    ValueData: "{{ kms_host }}"
+    ValueType: String
 ```
 @[1]
 @[2]
@@ -220,12 +220,3 @@ Registry Set_KMS {
 @[4-8]
 
 ---
-
-
-Registry Set_KMS {
-  Ensure = "Present"
-  Key = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform"
-  ValueName = "KeyManagementServiceName"
-  ValueData = $kms_host
-  ValueType = "String"
-}
