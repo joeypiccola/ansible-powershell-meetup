@@ -52,6 +52,7 @@ ansi-node-02.ad.piccola.us
 @[3]
 @[3-5]
 @[7-8]
+@[1-8]
 
 ---
 
@@ -75,6 +76,7 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 @[2]
 @[3]
 @[5-10]
+@[1-10]
 
 ---
 
@@ -86,3 +88,24 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 - Order and organize tasks.
 - Allow for code reusability.
 @olend
+
+---
+
+### Tasks
+
+```yml
+- tasks:
+  - name: Ensure user bob is present
+    win_user:
+      name: bob
+      password: B0bP4ssw0rd
+      state: present
+      groups:
+        - Administrators
+        - Users
+```
+@[1]
+@[2]
+@[3]
+@[4]
+@[4-9]
