@@ -133,3 +133,51 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 @[1-9]
 
 ---
+
+### Brining it together
+
+```yml
+- hosts: web_servers
+
+  tasks:
+  - name: Setup the xWebAdministration module
+    win_psmodule:
+      name: xWebAdministration
+      state: present
+  - name: Install WebServer feature extas
+    win_feature:
+      name:
+        - Web-Asp-Net45
+      state: present
+  - name: Install IIS Web-Server with sub features and management tools
+    win_feature:
+      name: Web-Server
+      state: present
+      include_sub_features: yes
+      include_management_tools: yes
+  - name: Disable IIS Website
+    win_dsc:
+      resource_name: xWebsite
+      Ensure: Absent
+      Name: Default Web Site
+  - name: Create IIS Website
+    win_dsc:
+      resource_name: xWebsite
+      Ensure: Present
+      Name: DSC Website
+      PhysicalPath: C:\inetpub\wwwroot
+  - name: Ensure IIS Website is started
+    win_dsc:
+      resource_name: xWebsite
+      Name: DSC Website
+      State: Started
+```
+@[1]
+@[3]
+@[4-7]
+@[8-12]
+@[13-18]
+@[19-23]
+@[24-29]
+@[30-34]
+---
