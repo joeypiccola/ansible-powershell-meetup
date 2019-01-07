@@ -53,7 +53,7 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 
 ### Inventory
 
-@size[25px](Defaults to `/etc/ansible/hosts` and may be represented as either INI or YAML.)
+@size[25px](Defaults to `/etc/ansible/hosts` and may be represented as either INI or YAML.) Can be overridden with `-i ./acme_inventory`.
 
 ```ini
 dockerlin.piccola.us
