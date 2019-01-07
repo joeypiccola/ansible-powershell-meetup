@@ -99,10 +99,10 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
     backup_admin_account: corpadmin
     sec_log_size_in_bytes: 25165824
   tasks:
-  - my 1st task
-  - my 2nd task
+  - my first task
+  - my second task
 ```
-@[]
+
 @[1]
 @[2-4]
 @[5]
