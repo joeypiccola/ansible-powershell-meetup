@@ -15,7 +15,7 @@
 
 ### Ansible
 
-#### Ansible is open source software that automates software provisioning, configuration management, and application deployment.
+@size[30px](Ansible is open source software that automates software provisioning, configuration management, and application deployment.)
 
 @ol[](false)
 - Configurations stored in YAML (dot yml)
@@ -36,7 +36,7 @@
 
 @size[25px](win_user - Manages local Windows user accounts)
 
-```
+```plaintext
 > ansible windows_servers `
     -m win_user `
     -a "name=vagrant state=absent"
@@ -47,4 +47,23 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
     "name": "vagrant",
     "state": "absent"
 }
+```
+
+---
+
+### Inventory
+
+@size[25px](Defaults to `/etc/ansible/hosts` and may be represented as either INI or YAML.)
+
+```ini
+mail.example.com
+
+[webservers]
+foo.example.com
+bar.example.com
+
+[dbservers]
+one.example.com
+two.example.com
+three.example.com
 ```
