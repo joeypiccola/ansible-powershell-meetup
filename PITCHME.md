@@ -51,7 +51,7 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 @[1]
 @[2]
 @[3]
-@[5-9]
+@[5-10]
 ---
 
 ### Inventory
@@ -68,4 +68,8 @@ ansi-node-02.ad.piccola.us
 [web]
 ansi-node-02.ad.piccola.us
 ```
+@[1]
+@[3]
+@[3-5]
+@[7-8]
 ---
