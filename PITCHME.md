@@ -1,26 +1,31 @@
 ## @color[#2e75e8](PowerShell) + @color[#C51A00](Ansible)
-### Tasks, DSC, Playbooks and more
+### Playbooks, DSC, Roles and more
 
 ---
 
 ## Agenda
 
-- Introduction to Ansible
-- Using Ansible to run ad-hoc tasks
-- Using Ansible to run Playbooks
+- Introduction
+- Ad-hoc modules
+- Playbooks
 - Desired State Configuration (DSC)
-- Ansible Roles
+- Roles
 
 ---
 
-#### Puppet Tasks
+## Ansible
+
+#### Ansible is open source software that automates software provisioning, configuration management, and application deployment.
 
 @ol[](false)
-- Tasks are single actions that you run on target machines in your infrastructure.
-- Best for changes that aren’t about enforcing the state of machines.
-- You can write tasks in any programming language that can run on the target nodes.
-- Tasks can be chained together into Plans (not covered today).
+- Configurations stored in YAML (dot yml)
+- Uses WinRM to communicate with Windows (must be pre-configured)
+- Runs on a control linux system (could also be via WSL)
 @olend
 
 ---
 
+#### Modules
+
+
+---
