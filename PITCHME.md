@@ -91,10 +91,30 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 
 ---
 
+### Playbooks cont.
+
+```yml
+---
+- hosts: windows-servers
+  vars:
+    backup_admin_account: corpadmin
+    sec_log_size_in_bytes: 25165824
+  tasks:
+  - my 1st task
+  - my 2nd task
+```
+@[1]
+@[2]
+@[3-5]
+@[6-8]
+@[1-8]
+
+---
+
 ### Tasks
 
 ```yml
-- tasks:
+  tasks:
   - name: Ensure user bob is present
     win_user:
       name: bob
@@ -109,3 +129,6 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 @[3]
 @[4]
 @[4-9]
+@[1-9]
+
+---
