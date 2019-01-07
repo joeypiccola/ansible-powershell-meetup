@@ -55,6 +55,7 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 
 @size[25px](Defaults to `/etc/ansible/hosts` and may be represented as either INI or YAML.)
 
+@snap[west]
 ```ini
 mail.example.com
 
@@ -67,3 +68,22 @@ one.example.com
 two.example.com
 three.example.com
 ```
+@snapend
+
+@snap[east]
+```yaml
+all:
+  hosts:
+    mail.example.com:
+  children:
+    webservers:
+      hosts:
+        foo.example.com:
+        bar.example.com:
+    dbservers:
+      hosts:
+        one.example.com:
+        two.example.com:
+        three.example.com:
+```
+@snapend
