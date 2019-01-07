@@ -34,26 +34,6 @@
 
 ---
 
-@size[25px](win_user - Manages local Windows user accounts)
-
-```plaintext
-> ansible windows_servers `
-    -m win_user `
-    -a "name=vagrant state=absent"
-
-ansi-node-01.ad.piccola.us | SUCCESS => {
-    "changed": true,
-    "msg": "User 'vagrant' deleted successfully",
-    "name": "vagrant",
-    "state": "absent"
-}
-```
-@[1]
-@[2]
-@[3]
-@[5-10]
----
-
 ### Inventory
 
 @size[25px](Defaults to `/etc/ansible/hosts` and may be represented as either INI or YAML. Can be overridden with `-i ./acme_inventory`.)
@@ -72,4 +52,29 @@ ansi-node-02.ad.piccola.us
 @[3]
 @[3-5]
 @[7-8]
+
 ---
+
+#### Module Example
+
+@size[25px](win_user - Manages local Windows user accounts)
+
+```plaintext
+> ansible windows_servers `
+    -m win_user `
+    -a "name=vagrant state=absent"
+
+ansi-node-01.ad.piccola.us | SUCCESS => {
+    "changed": true,
+    "msg": "User 'vagrant' deleted successfully",
+    "name": "vagrant",
+    "state": "absent"
+}
+```
+@[1]
+@[2]
+@[3]
+@[5-10]
+
+---
+
