@@ -19,8 +19,8 @@
 
 @ol[](false)
 - Configurations stored in YAML (dot yml)
-- Uses WinRM to communicate with Windows (must be pre-configured)
-- Runs on a control linux system (could also be via WSL)
+- Uses pre-configured WinRM to communicate with Windows
+- Runs on a control linux system (or WSL)
 @olend
 
 ---
