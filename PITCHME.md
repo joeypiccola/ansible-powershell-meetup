@@ -27,9 +27,8 @@
 
 #### Modules
 
-Index of modules can be found at [https://docs.ansible.com/ansible/latest/modules/list_of_windows_modules.html](https://docs.ansible.com/ansible/latest/modules/list_of_windows_modules.html)
+@size[14px](Index of modules can be found at [https://docs.ansible.com/ansible/latest/modules/list_of_windows_modules.html](https://docs.ansible.com/ansible/latest/modules/list_of_windows_modules.html))
 
 ![choco](assets/image/mods.jpg)
-
 
 ---
