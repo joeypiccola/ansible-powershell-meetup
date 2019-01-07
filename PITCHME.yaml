@@ -11,5 +11,5 @@ highlight : atom-one-dark
 logo : assets/image/logo.png
 transition : none
 published : true
-footnote : "PowerShell + Puppet"
+footnote : "PowerShell + Ansible"
 code-line-numbers : true

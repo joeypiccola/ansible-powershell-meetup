@@ -5,11 +5,11 @@
 
 ### Agenda
 
-- Introduction
-- Ad-hoc modules
-- Playbooks
-- Desired State Configuration (DSC)
-- Roles
+- Introduction.
+- Ad-hoc modules.
+- Playbooks.
+- Desired State Configuration (DSC).
+- Roles.
 
 ---
 
@@ -41,11 +41,11 @@
 ```ini
 dockerlin.piccola.us
 
-[windows]
+[windows-servers]
 ansi-node-01.ad.piccola.us
 ansi-node-02.ad.piccola.us
 
-[web]
+[web-servers]
 ansi-node-02.ad.piccola.us
 ```
 @[1]
@@ -55,7 +55,7 @@ ansi-node-02.ad.piccola.us
 
 ---
 
-#### Module Example
+### Module Example
 
 @size[25px](win_user - Manages local Windows user accounts)
 
@@ -78,3 +78,11 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 
 ---
 
+### Playbooks
+
+@ol[](false)
+- Written in YAML (dot yml).
+- Made up of tasks that call modules.
+- Order and organize tasks.
+- Allow for code reusability.
+@olend
