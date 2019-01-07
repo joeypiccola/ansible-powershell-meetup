@@ -39,7 +39,7 @@
 ### win_user - Manages local Windows user accounts
 
 ```
-> ansible windows_servers -l ansi-node-01.ad.piccola.us -m win_user -a "name=vagrant state=present password=2c0mplex!"
+> ansible -m win_user -a "name=vagrant state=present password=2c0mplex!"
 ansi-node-01.ad.piccola.us | SUCCESS => {
     "account_disabled": false,
     "account_locked": false,
