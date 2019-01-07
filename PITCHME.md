@@ -202,7 +202,7 @@ Registry Set_KMS {
   ValueType = "String"
 }
 ```
-@[1-6]
+@[1-7]
 
 ---
 
@@ -222,5 +222,29 @@ Registry Set_KMS {
 @[2]
 @[3]
 @[4-8]
+@[1-8]
 
 ---
+
+### win_shell
+
+```yaml
+- name: Get\Set PSRepository
+  win_shell: |
+    if ((Get-PSRepository -Name PSGallery).InstallationPolicy -eq 'Untrusted') {
+        Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+    }
+```
+@[1]
+@[2]
+@[3-5]
+@[1-5]
+
+---
+
+### script
+
+```yaml
+- name: Disable disconnected NICs
+  script: scripts/Disable-DisconnectedNics.ps1
+```
