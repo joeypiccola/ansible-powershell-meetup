@@ -48,7 +48,10 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
     "state": "absent"
 }
 ```
-
+@[1]
+@[2]
+@[3]
+@[5-9]
 ---
 
 ### Inventory
