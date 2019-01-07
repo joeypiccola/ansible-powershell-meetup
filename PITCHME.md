@@ -191,7 +191,7 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 
 ---
 
-### win_dsc
+### DSC
 
 ```powershell
 Registry Set_KMS {
@@ -203,6 +203,10 @@ Registry Set_KMS {
 }
 ```
 @[1-6]
+
+---
+
+### win_dsc
 
 ```yml
 - name: Set KMS
