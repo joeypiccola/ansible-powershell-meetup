@@ -36,7 +36,7 @@
 
 ---
 
-### win_user - Manages local Windows user accounts
+@size[20px](win_user - Manages local Windows user accounts)
 
 ```
 > ansible windows_servers `
