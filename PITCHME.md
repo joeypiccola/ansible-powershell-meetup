@@ -3,7 +3,7 @@
 
 ---
 
-## Agenda
+### Agenda
 
 - Introduction
 - Ad-hoc modules
@@ -13,7 +13,7 @@
 
 ---
 
-## Ansible
+### Ansible
 
 #### Ansible is open source software that automates software provisioning, configuration management, and application deployment.
 
@@ -25,7 +25,7 @@
 
 ---
 
-#### Modules
+### Modules
 
 @size[18px](Index of modules can be found at)
 
