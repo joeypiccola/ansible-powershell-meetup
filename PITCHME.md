@@ -134,7 +134,7 @@ ansi-node-01.ad.piccola.us | SUCCESS => {
 
 ---
 
-### Brining it together
+### Bringing it together
 
 ```yml
 - hosts: web_servers
