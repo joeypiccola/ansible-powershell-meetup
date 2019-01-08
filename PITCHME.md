@@ -298,11 +298,11 @@ joey@ansible:~/playbooks/win_config$ tree
 
 ---
 
-## Code & Demo
+### Code & Demo
 
 ---
 
-# WinRM
+### WinRM
 
 ```powershell
 $url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"
